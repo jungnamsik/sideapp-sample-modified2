@@ -7,7 +7,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class App1 implements DooraySideApp {
+public class App3 implements DooraySideApp {
     @Override
     public Map<String, Object> execute(Map<String, Object> map) {
         // TODO: 아래 서비스 성격에 알맞게 수정합니다.
@@ -21,7 +21,7 @@ public class App1 implements DooraySideApp {
 
         Map<String, Object> m1 = new HashMap<>();
         m1.put("id", "2");
-        m1.put("title", "Dooray! 게시판 활용하기");
+        m1.put("title", "Dooray! 사이드앱 이용하기33333333");
         m1.put("description", "공개 조직, 작성 권한 설정\n첨부파일, 댓글, 조회수 사용 설정\n말머리, 템플릿 설정\n게시판 관리자 설정");
         m1.put("url", "https://ybtour-poc.dooray.com/home/3317368739012375327/3317368739062662401");
 
@@ -43,7 +43,7 @@ public class App1 implements DooraySideApp {
 
         Map<String, Object> m2 = new HashMap<>();
         m2.put("id", "1");
-        m2.put("title", "노랑풍선 홈페이지");
+        m2.put("title", "노랑풍선 홈페이지33333333333333");
         m2.put("url", "https://ybtour.co.kr");
         list.add(m2);
         result.put("contents", list);

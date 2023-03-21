@@ -1,6 +1,9 @@
 package com.dooray.sideapp.controllers;
 
 import mycompany.App1;
+import mycompany.App2;
+import mycompany.App3;
+
 import com.dooray.sideapp.app.DooraySideApp;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -26,7 +29,7 @@ public class SideAppController {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Map<String, Object> app2(@RequestBody String body, @RequestAttribute Map<String, Object> sideAppParam) {
-        DooraySideApp app = new App1();
+        DooraySideApp app = new App2();
 
         return app.execute(sideAppParam);
     }
@@ -35,7 +38,7 @@ public class SideAppController {
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Map<String, Object> app3(@RequestBody String body, @RequestAttribute Map<String, Object> sideAppParam) {
-        DooraySideApp app = new App1();
+        DooraySideApp app = new App3();
 
         return app.execute(sideAppParam);
     }
