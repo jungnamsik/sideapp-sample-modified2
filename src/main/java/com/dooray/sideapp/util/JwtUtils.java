@@ -17,6 +17,7 @@ public class JwtUtils {
         Algorithm alg = Algorithm.HMAC512(key);
         JWTVerifier verifier = JWT.require(alg).build();
         DecodedJWT decode = verifier.verify(jwsString);
+	System.out.println(">>>" + decode.getPayload());
         return decode.getClaims()
                 .entrySet()
                 .stream()

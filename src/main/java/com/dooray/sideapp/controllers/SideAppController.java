@@ -21,6 +21,8 @@ public class SideAppController {
     @ResponseBody
     public Map<String, Object> app1(@RequestBody String body, @RequestAttribute Map<String, Object> sideAppParam) {
         DooraySideApp app = new App1();
+	System.out.println(body);
+
 
         return app.execute(sideAppParam);
     }
