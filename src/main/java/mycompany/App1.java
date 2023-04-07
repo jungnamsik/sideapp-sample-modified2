@@ -31,21 +31,16 @@ public class App1 implements DooraySideApp {
         Map<String, String> info1 = new HashMap<>();
         info1.put("label", "등록자");
         info1.put("text", "인사담당");
-
         for (int i=1;i<=10;i++){
         lm1Meta.add(info1);
         }
 
- 
-
         Map<String, String> info2 = new HashMap<>();
         info2.put("label", "테스트");
         info2.put("text", "2023.03.02.");
-
         for (int i=1;i<=10;i++){
             lm1Meta.add(info2);
         }
-
 
         m1.put("metadata", lm1Meta);
         list.add(m1);
