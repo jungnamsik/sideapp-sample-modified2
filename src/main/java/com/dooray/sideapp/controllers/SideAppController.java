@@ -16,17 +16,18 @@ import java.util.Map;
  */
 @RestController
 public class SideAppController {
+    /**
+     * @param body
+     * @param sideAppParam
+     * @return
+     */
     @PostMapping(value = "/app1") // TODO: http://oooo/app1 을 사이드앱 설정에 등록합니다.
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
     public Map<String, Object> app1(@RequestBody String body, @RequestAttribute Map<String, Object> sideAppParam) {
-        DooraySideApp app = new App1();
-<<<<<<< HEAD
-        //System.out.println(body);
-=======
-	System.out.println(body);
+        final DooraySideApp app = new App1();
 
->>>>>>> 2b4991e65b57075bb0ae2a165b20f7c0764a1a1f
+	    System.out.println(body);
 
         return app.execute(sideAppParam);
     }
