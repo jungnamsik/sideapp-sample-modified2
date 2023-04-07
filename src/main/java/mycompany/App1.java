@@ -11,6 +11,7 @@ public class App1 implements DooraySideApp {
     @Override
     public Map<String, Object> execute(Map<String, Object> map) {
         // TODO: 아래 서비스 성격에 알맞게 수정합니다.
+        // System.out.println(">>>>"+map);
 
         Map<String, Object> result = new HashMap<>();
 
@@ -21,7 +22,7 @@ public class App1 implements DooraySideApp {
 
         Map<String, Object> m1 = new HashMap<>();
         m1.put("id", "2");
-        m1.put("title", "Dooray! 게시판 활용하기");
+        m1.put("title", "Dooray! 게시판 활용하기["+map.get("email")+"]");
         m1.put("description", "공개 조직, 작성 권한 설정\n첨부파일, 댓글, 조회수 사용 설정\n말머리, 템플릿 설정\n게시판 관리자 설정");
         m1.put("url", "https://ybtour-poc.dooray.com/home/3317368739012375327/3317368739062662401");
 
@@ -36,6 +37,54 @@ public class App1 implements DooraySideApp {
             Map<String, String> m = new HashMap<>();
             m.put("label", "등록일");
             m.put("text", "2020.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "등록일");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "테스트");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "등록일");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "테스트");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "등록일");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "테스트");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "등록일");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "테스트");
+            m.put("text", "2023.03.02.");
             lm1Meta.add(m);
         }
         m1.put("metadata", lm1Meta);

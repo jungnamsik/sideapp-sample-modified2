@@ -28,8 +28,10 @@ public class JwtInterceptor implements HandlerInterceptor {
         }
 
         // System.out.println(">>>>["+ KEY+"]["+requestURI+"]["+ contextPath+"]");
-
+        // System.out.println(">>>>["+ request.getHeader("Authorization") +"]");
+        
         Map<String, Object> map = JwtUtils.parseJwsOnAuthorizationHeader(KEY, request.getHeader("Authorization"));
+        // System.out.println(">>>>["+ map +"]");
 
         request.setAttribute("sideAppParam", map);
 
