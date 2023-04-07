@@ -37,8 +37,8 @@ public class App2 implements DooraySideApp {
                         String s = String.format("%010d", t*r*i);
                         Map<String, String> m = new HashMap<>();
                         m.put("label", "등록자"+t+r+i);
-                        
                         m.put("text", s);
+                        m.put("info1", "정보입니다");
                         arr1meta.add(m);
                     }
                     tab1con.put("metadata", arr1meta);
