@@ -25,7 +25,7 @@ public class App2 implements DooraySideApp {
                 tab1.put("title", "탭"+t+" 사이드앱");
 
                 List<Map<String, Object>> tab1arr = new ArrayList<>();
-                for (int r=1;r<=3;r++) { // Rows
+                for (int r=1;r<=(t+1);r++) { // Rows
                     Map<String, Object> tab1con = new HashMap<>();
                     tab1con.put("id", "t"+r);
                     tab1con.put("title", "탭"+t+"="+r+")제목");
