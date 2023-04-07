@@ -36,7 +36,25 @@ public class App1 implements DooraySideApp {
         {
             Map<String, String> m = new HashMap<>();
             m.put("label", "등록일");
-            m.put("text", "2020.03.02.");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "테스트");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "등록일");
+            m.put("text", "2023.03.02.");
+            lm1Meta.add(m);
+        }
+        {
+            Map<String, String> m = new HashMap<>();
+            m.put("label", "테스트");
+            m.put("text", "2023.03.02.");
             lm1Meta.add(m);
         }
         {

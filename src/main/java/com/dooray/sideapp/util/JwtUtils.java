@@ -21,7 +21,11 @@ public class JwtUtils {
         Algorithm alg = Algorithm.HMAC512(key);
         JWTVerifier verifier = JWT.require(alg).build();
         DecodedJWT decode = verifier.verify(jwsString);
+<<<<<<< HEAD
         System.out.println(">>>" + decode.getPayload());
+=======
+	System.out.println(">>>" + decode.getPayload());
+>>>>>>> 2b4991e65b57075bb0ae2a165b20f7c0764a1a1f
         return decode.getClaims()
                 .entrySet()
                 .stream()
@@ -37,6 +41,10 @@ public class JwtUtils {
 
         return parseJws(key, jwsStringOnHeader.substring(pos + BEARER_LEN));
     }
+<<<<<<< HEAD
 
 
 }
+=======
+}
+>>>>>>> 2b4991e65b57075bb0ae2a165b20f7c0764a1a1f

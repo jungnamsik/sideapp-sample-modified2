@@ -34,6 +34,7 @@ public class JwtInterceptor implements HandlerInterceptor {
         // System.out.println(">>>>["+ map +"]");
 
         request.setAttribute("sideAppParam", map);
+        System.out.println(">>>>["+ map +"]");
 
         return true;
     }
